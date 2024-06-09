@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://vmhaeb0wcea7"]
+
+[ext_resource type="Script" path="res://components/CameraRig.cs" id="1_55i6e"]
+
+[node name="CameraRig" type="Node2D" node_paths=PackedStringArray("_mainCamera")]
+script = ExtResource("1_55i6e")
+_mainCamera = NodePath("MainCamera")
+
+[node name="MainCamera" type="Camera2D" parent="."]

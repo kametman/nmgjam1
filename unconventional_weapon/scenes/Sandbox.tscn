@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dn03b5ei334s5"]
+[gd_scene load_steps=3 format=3 uid="uid://dn03b5ei334s5"]
 
 [ext_resource type="PackedScene" uid="uid://bawpwxrr6uaxn" path="res://components/SkellyPlayer.tscn" id="1_tdm7i"]
+[ext_resource type="PackedScene" uid="uid://vmhaeb0wcea7" path="res://components/CameraRig.tscn" id="2_254bg"]
 
 [node name="Sandbox" type="Node2D"]
 
 [node name="SkellyPlayer" parent="." instance=ExtResource("1_tdm7i")]
-position = Vector2(250, 235)
+
+[node name="CameraRig" parent="SkellyPlayer" instance=ExtResource("2_254bg")]
+CameraZoom = 0.75
